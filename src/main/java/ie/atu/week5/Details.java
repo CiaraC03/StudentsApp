@@ -5,6 +5,18 @@ public class Details {
     private String email;
     private String course;
 
+    public Details(){
+        this.name = "";
+        this.email = "";
+        this.course = "";
+    }
+
+    public Details(String name, String email, String course){
+        this.name = name;
+        this.email = email;
+        this.course = course;
+    }
+
     public String getName()
     {
         return name;

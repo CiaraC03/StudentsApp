@@ -19,7 +19,7 @@ public class students {
         System.out.println("Please enter your first course : ");
         String course = input.nextLine();
         stuDetail.setCourse(course);
-        System.out.println("You entered : " + course);
+        System.out.println("You entered : " + stuDetail.getCourse());
 
         //created second instance
         Details stuDetail2 = new Details();
@@ -37,6 +37,20 @@ public class students {
         String course2 = input.nextLine();
         stuDetail2.setCourse(course2);
         System.out.println("You entered : " + stuDetail2.getCourse());
+
+        //Created 3rd instance using a constructor
+        // the constructor puts all the details into one line instead of using continous get/set
+        System.out.println("Please enter your third student name : ");
+        String name3 = input.nextLine();
+        System.out.println("Please enter your third student email : ");
+        String email3 = input.nextLine();
+        System.out.println("Please enter your third student course : ");
+        String course3 = input.nextLine();
+        Details stuDetail3 = new Details(name3, email3, course3);
+        System.out.println("You entered : " + stuDetail3.getName());
+        System.out.println("You entered : " + stuDetail3.getEmail());
+        System.out.println("You entered : " + stuDetail3.getCourse());
+
 
     }
 }
